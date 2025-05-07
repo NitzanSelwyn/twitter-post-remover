@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Twitter Ad Remover",
+    "version": "1.0",
+    "description": "Removes ad posts from Twitter by detecting 'ad' text in the DOM",
+    "permissions": ["activeTab"],
+    "content_scripts": [{
+        "matches": ["*://*.twitter.com/*", "*://*.x.com/*"],
+        "js": ["content.js"]
+    }],
+    "icons": {
+        "128": "icon.svg"
+    }
+}
